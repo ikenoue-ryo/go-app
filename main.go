@@ -1,13 +1,10 @@
 package main
 
-import (
-	"fmt"
-	"go-project/go-app/app/controllers"
-	"go-project/go-app/app/models"
-)
+import "go-project/go-app/app/controllers"
 
 func main() {
-	fmt.Println(models.Db)
+	// fmt.Println(models.Db)
 
 	controllers.StartMainServer()
+
 }
