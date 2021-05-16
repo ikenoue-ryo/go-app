@@ -1,0 +1,11 @@
+{{ define "content" }}
+<p>UserName: {{.Name}}</p>
+<p>UserEmail: {{.Email}}</p>
+<p>UserUUID: {{.UUID}}</p>
+<h1>Sample App</h1>
+<hr>
+
+{{ range .Todos }}
+<div>{{ .Content }}</div>
+{{end}}
+{{end}}
