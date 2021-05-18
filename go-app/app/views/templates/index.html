@@ -7,5 +7,8 @@
 
 {{ range .Todos }}
 <div>{{ .Content }}</div>
+<p><a href="/todos/edit/{{.ID}}">Edit</a></p>
+<p><a href="/todos/delete/{{.ID}}">Delete</a></p>
 {{end}}
+<p><a href="todos/new">Create</a></p>
 {{end}}
